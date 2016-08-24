@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+    <string name="title">Tips for getting around Puen city</string>
+    <string name="tipsTriks">Tips and tricks</string>
+    <string name="info">Show some tips and tricks related to Traveling aroun Pune city.</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="basic">Basic</string>
+    <string name="basicInstructions">According to Lonely Planet from 2002, there are 2.8 million people in Pune. I would assume it is much more now. \n\nChange money as soon as you can or get it from an ATM (there are plenty, not all accept all cards). \n\nMost places do not take dollars, at least not at a reasonable rate. \n\nGet the business card or your hotel and keep it on you at all times, handy for finding your way back. \n\nIt is usually easy to find a helpful guy speaking English. However, if you do not, it is important to pronounce names (e.g. of places) in local accent, as people will not understand you otherwise. Try to mimic the accent of locals when you do that.
+</string>
+    <string name="hotel">Hotel</string>
+    <string name="hotelInstructions">Around Koregon park - there is a western atmosphere here. Many tourists come here for the Oshu ashram.\n\nAround MG Road, area know as Pune Camp. There are many local places here, so this is my favorite place. I stayed at the Sagar Plaza Hotel which has a perfect location. Highly recommended.\n\nTry to avoid hotels with are in the western part of the city if you are working in Magarpatta. There is also not much to do there.</string>
+    <string name="transport">Transportation</string>
+    <string name="transportInstructions">You DO NOT want to rent a car and drive on your own. You will understand once you will see how people drive.\n\nNo taxis in Pune. There are many transport companies and you can arrange a car with a driver, but you cannot just hail a cab. Instead you have rickshaws.\n\nRickshaws - They are a great way to travel.\n\nLooking for an English speaking rickshaw driver?  Call Aiub Khan at 988-140-8465, at least an hour in advance.\n\nAfter-noons to early evenings means heavy congestions in Pune. Late mornings can be hectic as well. In fact, other than late night it is congested.</string>
+    <string name="food">Food</string>
+    <string name="foodInstructions">Snacks - small meals. Usually comprised of south Indian delicacies. Do not miss the Masala Dosa which is a lentil pancake with little potato stuffing.\n\nThali - a preset meal where you get a number of dishes, bread and rice. It is all you can eat - waiters will keep refilling your place. However, you are eating what everybody else are eating, so you cannot ask to make it less spicy.\n\nSizzlers - found in specific places. You get a sizzling pan with some stir-fried vegetables and meat. It is not really Indian food.\n\nChinese food is very popular. Most of it is very far from the source and tastes Indian.\n\nThere are many types of Indian cuisines - northern, southern, Punjabi, Gujarati, Hyderabadi, Kashmiri, etc. Each has different flavors and dishes. Experiment and find your favorite.</string>
+</resources>
