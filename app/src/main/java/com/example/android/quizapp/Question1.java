@@ -35,7 +35,7 @@ public class Question1 extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 if(radioGroup.getCheckedRadioButtonId() == R.id.option1)
                 {
-                    score = score + 1;
+                    score++;
                     Toast.makeText(getApplicationContext(), "Correct Answer", Toast.LENGTH_SHORT).show();
                 }
                 else

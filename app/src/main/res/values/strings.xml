@@ -29,4 +29,10 @@
     <string name="question4Opt2">Diphu, Assam</string>
     <string name="question4Opt3">Kohima, Nagaland</string>
     <string name="question4Opt4">Gangtok, Sikkim</string>
+
+    <string name="question5">Who is Indian Tennis Players?</string>
+    <string name="question5Opt1">Marria Sharapova</string>
+    <string name="question5Opt2">Sania Mirza</string>
+    <string name="question5Opt3">Venus Williams</string>
+    <string name="question5Opt4">Leander Paes</string>
 </resources>

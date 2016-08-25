@@ -12,7 +12,7 @@ import android.widget.Toast;
 public class Question2 extends AppCompatActivity {
 
     Button next,previous;
-    int score;
+    int score=0;
     RadioButton option1,option2,option3,option4;
 
     @Override
@@ -61,7 +61,7 @@ public class Question2 extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 if(radioGroup.getCheckedRadioButtonId() == R.id.option4)
                 {
-                    score = score +1;
+                    score++;
                     Toast.makeText(getApplicationContext(), "Correct Answer", Toast.LENGTH_SHORT).show();
                 }
                 else

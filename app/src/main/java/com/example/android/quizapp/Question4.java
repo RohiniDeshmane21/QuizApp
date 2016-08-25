@@ -1,7 +1,5 @@
 package com.example.android.quizapp;
 
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -14,7 +12,7 @@ import android.widget.Toast;
 public class Question4 extends AppCompatActivity {
 
     Button next,previous;
-    int score;
+    int score=0;
     RadioButton option1,option2,option3,option4;
 
     @Override
@@ -30,7 +28,7 @@ public class Question4 extends AppCompatActivity {
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                AlertDialog alertDialog = new AlertDialog.Builder(Question4.this).create();
+               /* AlertDialog alertDialog = new AlertDialog.Builder(Question4.this).create();
                 alertDialog.setTitle("Game Completed");
                 alertDialog.setMessage("Your Score" + score);
                 alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
@@ -41,8 +39,17 @@ public class Question4 extends AppCompatActivity {
                                 //dialog.dismiss();
                             }
                         });
-                alertDialog.show();
+                alertDialog.show();*/
+                Intent nextScreen = new Intent(Question4.this, Question5.class);
+                //Create the bundle
+                Bundle bundle = new Bundle();
 
+                //Add your data to bundle
+                bundle.putInt("score",score);
+
+                //Add the bundle to the intent
+                nextScreen.putExtras(bundle);
+                startActivity(nextScreen);
             }
         });
 
@@ -65,7 +72,7 @@ public class Question4 extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 if(radioGroup.getCheckedRadioButtonId() == R.id.option2)
                 {
-                    score =score +1;
+                    score++;
                     Toast.makeText(getApplicationContext(), "Correct Answer", Toast.LENGTH_SHORT).show();
                 }
                 else
