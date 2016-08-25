@@ -12,20 +12,59 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="40sp"
-        android:text= "@string/food"
+        android:textSize="20sp"
+        android:text= "@string/question2"
         android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
         android:layout_centerHorizontal="true"
         android:id="@+id/textView2" />
 
-    <TextView
+    <RadioGroup
+        android:id="@+id/radioGroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/foodInstructions"
-        android:id="@+id/textView"
-        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginLeft="20dp">
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/question2Opt1"
+        android:id="@+id/option1"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/textView2"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/question2Opt2"
+        android:id="@+id/option2"
+        android:layout_below="@+id/option3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/question2Opt3"
+        android:id="@+id/option3"
+        android:layout_below="@+id/option1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/question2Opt4"
+        android:id="@+id/option4"
+        android:layout_below="@+id/option2"
+        android:layout_alignLeft="@+id/option2"
+        android:layout_alignStart="@+id/option2"
+        android:checked="false" />
+    </RadioGroup>
 
     <Button
         android:layout_width="wrap_content"

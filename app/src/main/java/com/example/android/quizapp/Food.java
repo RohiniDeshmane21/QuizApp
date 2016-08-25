@@ -5,10 +5,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.Toast;
 
 public class Food extends AppCompatActivity {
 
     Button next,previous;
+    RadioButton option1,option2,option3,option4;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +35,27 @@ public class Food extends AppCompatActivity {
             public void onClick(View v) {
                 Intent previousScreen = new Intent(Food.this, Transportation.class);
                 startActivity(previousScreen);
+            }
+        });
+
+        option1 = (RadioButton)findViewById(R.id.option1);
+        option2 = (RadioButton)findViewById(R.id.option2);
+        option3 = (RadioButton)findViewById(R.id.option3);
+        option4 = (RadioButton)findViewById(R.id.option4);
+
+        final RadioGroup radioGroup = (RadioGroup) findViewById(R.id.radioGroup);
+
+        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener()
+        {
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                if(radioGroup.getCheckedRadioButtonId() == R.id.option4)
+                {
+                    Toast.makeText(getApplicationContext(), "Correct Answer", Toast.LENGTH_SHORT).show();
+                }
+                else
+                {
+                    Toast.makeText(getApplicationContext(), "Wrong Answer", Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }
