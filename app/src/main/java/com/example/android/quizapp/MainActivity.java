@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent nextActivity = new Intent(MainActivity.this,Basic.class);
+                Intent nextActivity = new Intent(MainActivity.this,Question1.class);
                 startActivity(nextActivity);
             }
         });

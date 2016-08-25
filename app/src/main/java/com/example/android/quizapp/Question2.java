@@ -9,23 +9,34 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
-public class Transportation extends AppCompatActivity {
+public class Question2 extends AppCompatActivity {
 
     Button next,previous;
+    int score;
     RadioButton option1,option2,option3,option4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_transportation);
+        setContentView(R.layout.activity_question2);
 
         next = (Button)findViewById(R.id.Next);
         previous = (Button)findViewById(R.id.previous);
 
+        Bundle bundle = getIntent().getExtras();
+        score = bundle.getInt("score");
+
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent nextScreen = new Intent(Transportation.this, Food.class);
+                Intent nextScreen = new Intent(Question2.this, Question3.class);
+                Bundle bundle = new Bundle();
+
+                //Add your data to bundle
+                bundle.putInt("score",score);
+
+                //Add the bundle to the intent
+                nextScreen.putExtras(bundle);
                 startActivity(nextScreen);
             }
         });
@@ -33,10 +44,11 @@ public class Transportation extends AppCompatActivity {
         previous.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent previousScreen = new Intent(Transportation.this, Hotels.class);
+                Intent previousScreen = new Intent(Question2.this, Question1.class);
                 startActivity(previousScreen);
             }
         });
+
         option1 = (RadioButton)findViewById(R.id.option1);
         option2 = (RadioButton)findViewById(R.id.option2);
         option3 = (RadioButton)findViewById(R.id.option3);
@@ -47,8 +59,9 @@ public class Transportation extends AppCompatActivity {
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener()
         {
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-                if(radioGroup.getCheckedRadioButtonId() == R.id.option2)
+                if(radioGroup.getCheckedRadioButtonId() == R.id.option4)
                 {
+                    score = score +1;
                     Toast.makeText(getApplicationContext(), "Correct Answer", Toast.LENGTH_SHORT).show();
                 }
                 else

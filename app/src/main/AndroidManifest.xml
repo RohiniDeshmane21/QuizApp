@@ -15,10 +15,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Basic" />
-        <activity android:name=".Hotels" />
-        <activity android:name=".Transportation" />
-        <activity android:name=".Food"></activity>
+        <activity android:name=".Question1" />
+        <activity android:name=".Question3" />
+        <activity android:name=".Question4" />
+        <activity android:name=".Question2"></activity>
     </application>
 
 </manifest>
