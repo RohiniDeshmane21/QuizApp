@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.Toast;
 
 public class Question5 extends AppCompatActivity {
 
@@ -34,20 +35,24 @@ public class Question5 extends AppCompatActivity {
         checkBox2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(checkBox2.isChecked() && checkBox4.isChecked())
+                if(!checkBox1.isChecked() && checkBox2.isChecked() && !checkBox3.isChecked() && checkBox4.isChecked())
                 {
+                    Toast.makeText(getApplicationContext(), "Correct Answer", Toast.LENGTH_SHORT).show();
                     score++;
                 }
+
             }
         });
 
         checkBox4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(checkBox2.isChecked() && checkBox4.isChecked())
+                if(!checkBox1.isChecked() && checkBox2.isChecked() && !checkBox3.isChecked() && checkBox4.isChecked())
                 {
+                    Toast.makeText(getApplicationContext(), "Correct Answer", Toast.LENGTH_SHORT).show();
                     score++;
                 }
+
             }
         });
 
@@ -62,7 +67,6 @@ public class Question5 extends AppCompatActivity {
                             public void onClick(DialogInterface dialog, int which) {
                                 Intent nextScreen = new Intent(Question5.this, MainActivity.class);
                                 startActivity(nextScreen);
-                                //dialog.dismiss();
                             }
                         });
                 alertDialog.show();

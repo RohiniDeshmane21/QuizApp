@@ -28,18 +28,7 @@ public class Question4 extends AppCompatActivity {
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               /* AlertDialog alertDialog = new AlertDialog.Builder(Question4.this).create();
-                alertDialog.setTitle("Game Completed");
-                alertDialog.setMessage("Your Score" + score);
-                alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
-                        new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int which) {
-                                Intent nextScreen = new Intent(Question4.this, MainActivity.class);
-                                startActivity(nextScreen);
-                                //dialog.dismiss();
-                            }
-                        });
-                alertDialog.show();*/
+
                 Intent nextScreen = new Intent(Question4.this, Question5.class);
                 //Create the bundle
                 Bundle bundle = new Bundle();
