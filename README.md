@@ -1,6 +1,9 @@
 # QuizApp
 Basic Tour guide app which shows a city or location of your choice!
 
-Includes : -
-* Open One activity from another activity.
-* Open google map app from this app and shows particular location.
+What will I learn?
+*  Planning your app design before coding.
+*  Taking an app layout from drawing to XML code.
+*  Creating, positioning, and styling views.
+*  Creating interactivity through button clicks and Java code.
+*  Commenting and documenting code.
